@@ -1,5 +1,7 @@
 # Markdown Editor & Preview
 
+[![GitHub stars](https://img.shields.io/github/stars/Sassine/markdown-editor-src?style=social)](https://github.com/Sassine/markdown-editor-src)
+
 Este é um editor de Markdown com visualização em tempo real, desenvolvido com React, Vite e Tailwind CSS. O editor suporta temas claro/escuro e internacionalização, permitindo que você edite e visualize documentos Markdown de forma eficiente.
 
 ## Funcionalidades
