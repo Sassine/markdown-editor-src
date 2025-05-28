@@ -33,6 +33,8 @@ Este é um editor de Markdown com visualização em tempo real, desenvolvido com
    ```
 2. Abra o navegador e acesse `http://localhost:3000` para ver o editor em ação.
 
+Você também pode visualizar a versão online em [sassine.dev/markdown](https://sassine.dev/markdown).
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.

@@ -33,6 +33,8 @@ This is a Markdown editor with real-time preview, developed with React, Vite, an
    ```
 2. Open your browser and go to `http://localhost:3000` to see the editor in action.
 
+You can also view the online version at [sassine.dev/markdown](https://sassine.dev/markdown).
+
 ## Contribution
 
 Contributions are welcome! Feel free to open issues or pull requests.
