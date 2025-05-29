@@ -6,6 +6,12 @@ import { useTranslation } from 'react-i18next';
 import { createPortal } from 'react-dom';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import { motion } from 'framer-motion';
+
+const headerVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
 
 const Header: React.FC = () => {
   const { markdown, setMarkdown } = useMarkdownStore();
@@ -139,7 +145,12 @@ const Header: React.FC = () => {
 
   return (
     <>
-    <header className="bg-white dark:bg-slate-950 shadow-sm border-b border-gray-200 dark:border-slate-800 transition-colors duration-200 relative">
+    <motion.header
+      className="bg-white dark:bg-slate-950 shadow-sm border-b border-gray-200 dark:border-slate-800 transition-colors duration-200 relative"
+      variants={headerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="max-w-screen-2xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <span className="h-6 w-6 text-violet-500 flex items-center justify-center">
@@ -149,6 +160,9 @@ const Header: React.FC = () => {
             </svg>
           </span>
           <h1 className="text-xl font-bold">{t('title')}</h1>
+          <a href="https://github.com/Sassine/markdown-editor-src" target="_blank" rel="noopener noreferrer" className="ml-2">
+            <img src="https://img.shields.io/github/stars/Sassine/markdown-editor-src?style=social" alt="GitHub stars" />
+          </a>
         </div>
 
         <div className="flex space-x-3 items-center">
@@ -230,7 +244,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
     </>
   );
 };
